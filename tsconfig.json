@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "target": "ES2018",
+    "module": "ES2015"
+  }
+}
