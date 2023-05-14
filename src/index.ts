@@ -105,7 +105,6 @@ function updateUser(id: string, req: http.IncomingMessage, res: http.ServerRespo
 }
 
 function deleteUser(id: string, res: http.ServerResponse) {
-    console.log(id)
     if (!id || !validate(id)) {
         return sendResponse(res, 400, {error: 'Invalid user id'});
     }
@@ -149,7 +148,7 @@ function handleRequest(req: http.IncomingMessage, res: http.ServerResponse) {
     }
 }
 
-const server = http.createServer(handleRequest);
+export const server = http.createServer(handleRequest);
 
 server.listen(process.env.PORT, () => {
     console.log(`Server running on port ${process.env.PORT}`);
