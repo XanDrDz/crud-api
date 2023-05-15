@@ -1,0 +1,41 @@
+{
+  "name": "CRUD_API",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "start:dev": "cross-env NODE_ENV=development nodemon --exec ts-node --esm src/index.ts",
+    "start:multi": "cross-env NODE_ENV=multi nodemon --exec ts-node --esm src/multi.ts",
+    "test": "jest",
+    "start:prod": "cross-env NODE_ENV=production webpack --mode production"
+  },
+  "keywords": [
+    "nodejs",
+    "typescript"
+  ],
+  "author": "Aleksandr",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.1",
+    "@types/node": "^18.16.3",
+    "@types/webpack": "^5.28.1",
+    "@typescript-eslint/eslint-plugin": "^5.59.1",
+    "@typescript-eslint/parser": "^5.59.1",
+    "eslint": "^8.39.0",
+    "nodemon": "^2.0.22",
+    "prettier": "^2.8.8",
+    "ts-jest": "^29.1.0",
+    "ts-loader": "^9.4.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4",
+    "uuid": "^9.0.0",
+    "webpack": "^5.81.0",
+    "webpack-cli": "^5.0.2"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
+    "supertest": "^6.3.3"
+  }
+}
