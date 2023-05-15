@@ -4,3 +4,7 @@ export interface User {
     age: number;
     hobbies: string[];
 }
+
+export interface IWorker{
+    port: number;
+}
